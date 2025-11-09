@@ -1,4 +1,4 @@
-package com.fundTransfer.fundTransfer;
+package com.fundTransfer.com.hcl.lloyds.ewallet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
