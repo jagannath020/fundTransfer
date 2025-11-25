@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="localhost" uuid="c9f97f0d-a8eb-4591-a4dc-90126f9cf83c" type="MYSQL">
+      <base-info connect-type="DB_DEFAULT" product="MySQL" version="8.0.44" major-version="8" minor-version="0" jdbc-name="MySQL Connector Java" jdbc-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" jdbc-major-version="5" jdbc-minor-version="1" />
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="fund_tsr" operator="@" />
+            <name qname="mysql" operator="@" />
+            <name qname="performance_schema" operator="@" />
+            <name qname="sys" operator="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <choose-schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="fund_tsr" operator="@" />
+          </node>
+        </introspection-scope>
+      </choose-schema-mapping>
+      <use-database kind="schema">
+        <name qname="fund_tsr" operator="@" />
+      </use-database>
+      <url>jdbc:mysql://localhost:3306/fund_tsr</url>
+      <remarks />
+      <vm-options />
+      <driver-info id="mysql5" />
+      <ssh-properties enabled="false" />
+      <jdbc-additional-properties>
+        <property name="characterSetResults" value="utf8" />
+        <property name="serverTimezone" value="Asia/Calcutta" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="useTimezone" value="true" />
+        <property name="yearIsDateType" value="false" />
+      </jdbc-additional-properties>
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>
