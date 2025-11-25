@@ -5,12 +5,10 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-
 @Data
 @Entity
-@Table(name = "User", schema = "fund_tsr")
-public class UserEntity {
-
+@Table(name = "User_Replica", schema = "fund_tsr")
+public class UserReplica {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id", nullable = false, unique = true)
@@ -35,5 +33,3 @@ public class UserEntity {
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 }
-
-

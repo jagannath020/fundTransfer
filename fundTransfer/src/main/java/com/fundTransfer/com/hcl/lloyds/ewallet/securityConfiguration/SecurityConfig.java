@@ -21,8 +21,7 @@ public class SecurityConfig {
 
         log.info("Configuring security filter chain...");
 
-        http
-                .csrf(csrf -> csrf.disable())
+        http.csrf(csrf -> csrf.disable())
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 
