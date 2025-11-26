@@ -92,4 +92,12 @@ public class GlobalExceptionHandler {
             return message;
         }
     }
+
+    @ExceptionHandler(DuplicateOrderException.class)
+    public ResponseEntity<ErrorResponse> handleDuplicateOrder(DuplicateOrderException ex) {
+        log.warn("Duplicate order: {}", ex.getMessage());
+
+        return ResponseEntity.status(HttpStatus.CONFLICT)
+                .body(new ErrorResponse(ex.getMessage()));
+    }
 }
